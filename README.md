@@ -1,24 +1,18 @@
 # Practica Flutter
 
-App de practica de darios de los componentes de flutter
+App de practica de varios de los componentes de flutter siguiendo curso de [Fernando Herrera](https://www.youtube.com/channel/UCuaPTYj15JSkETGnEseaFFg)
 
 ## Componentes usados:
 
-- ListView
-    + FutureBuilder
-    + ListView.Builder
-    + Scroll
-        - Pull to refresh
-        - Loading at list end
-- json processing
-- Routes
-    + Navegacion entre pages
-    + Dispose
 - AlertDialog
 - Assets
     + AssetImage
     + NetworkImage
     + FadeInImage
+- json processing
+- Routes
+    + Navegacion entre pages
+    + Dispose
 - Avatars
 - Cards
 - Container
@@ -32,4 +26,12 @@ App de practica de darios de los componentes de flutter
     + Slider
     + Checkbox
     + Switch
-    + Controller
+- ListView
+    + FutureBuilder
+    + ListView.Builder (Infinite Scroll)
+    + ScrollController
+        - Pull to refresh
+        - Loading more content at list end
+
+
+[David Bonelo](davidev.net)
