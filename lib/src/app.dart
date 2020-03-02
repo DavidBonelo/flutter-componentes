@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_localizations/flutter_localizations.dart';
 
 import 'package:practicaflutter/src/pages/alert_page.dart';//aparte de en rutas también lo dejo aquí porque lo uso en el onGenerateRoute
 import 'package:practicaflutter/src/routes/routes.dart';
@@ -24,6 +25,18 @@ class MyApp extends StatelessWidget {
           builder: (BuildContext context) => AlertPage()
         );
       },
+
+      // Soporte para lenguages
+      localizationsDelegates: [
+        GlobalMaterialLocalizations.delegate,
+        GlobalWidgetsLocalizations.delegate,
+      ],
+      supportedLocales: [
+        // const Locale('en', 'US'), // el segundo parametro especifica la region (es opcional)
+        // const Locale('es', 'ES'),
+        const Locale('en'),
+        const Locale('es'),
+      ],
     );
   }
 }
